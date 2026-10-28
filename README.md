@@ -1,6 +1,6 @@
-# 🌌 NextOS: The Universal Operating System
+# 🌌 OmniSemOS: The Universal Operating System
 
-> **Designed by Er. Manoj Kumar**  
+> **Designed & Engineered by Er. Manoj Kumar**  
 > *A next-generation microkernel operating system built in modern Rust that runs natively on bare hardware AND across Windows, macOS, Linux, and Android.*
 
 ---
@@ -12,7 +12,7 @@ In the modern world, computing is fragmented across incompatible platforms:
 - **Macs**: macOS (`ARM64` Apple Silicon)
 - **Smartphones**: Android (`ARM64`)
 
-**NextOS** breaks this barrier by introducing a **Dual-Mode Microkernel + WebAssembly Application Fabric**:
+**OmniSemOS** breaks this barrier by introducing a **Dual-Mode Microkernel + WebAssembly Application Fabric**:
 1. **Bare-Metal Mode**: Boots directly from USB/NVMe on real PCs, Macs, and ARM boards (via UEFI / DeviceTree).
 2. **Hosted Sandbox Mode**: Runs with 0-install simplicity inside Windows (Win32/Hyper-V), macOS (Hypervisor.framework/Metal), Linux (KVM/Wayland), and Android (AVF/NDK).
 
@@ -22,16 +22,16 @@ In the modern world, computing is fragmented across incompatible platforms:
 
 ```text
 +---------------------------------------------------------------+
-|                      NextOS Applications                      |
+|                    OmniSemOS Applications                     |
 |       (Compiled to WebAssembly / WASI - Portable Binaries)     |
 +---------------------------------------------------------------+
 |                    Universal Glass UI Engine                  |
 |          (Rust wgpu / WebGPU - 120 FPS Vector Canvas)         |
 +---------------------------------------------------------------+
-|                   NextOS Userspace Services                   |
+|                  OmniSemOS Userspace Services                 |
 |   [VFS / Storage]   [Network Stack]   [Window Manager]  [Audio]   |
 +---------------------------------------------------------------+
-|                   NextOS Microkernel (Rust)                   |
+|                  OmniSemOS Microkernel (Rust)                 |
 |   * Capability-based security   * Zero-copy IPC   * Scheduler  |
 +---------------------------------------------------------------+
 |               Hardware Abstraction Layer (HAL)                |
