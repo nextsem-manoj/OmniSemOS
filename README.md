@@ -1,16 +1,16 @@
-﻿# ðŸŒŒ NextOS: The Universal Operating System
+# 🌌 NextOS: The Universal Operating System
 
 > **Designed by Er. Manoj Kumar**  
 > *A next-generation microkernel operating system built in modern Rust that runs natively on bare hardware AND across Windows, macOS, Linux, and Android.*
 
 ---
 
-## ðŸŒŸ The Vision: True Universal Computing
+## 🌟 The Vision: True Universal Computing
 
 In the modern world, computing is fragmented across incompatible platforms:
-- **PC & Laptops**: Windows 11 & Linux (x86_64)
-- **Macs**: macOS (ARM64 Apple Silicon)
-- **Smartphones**: Android (ARM64)
+- **PC & Laptops**: Windows 11 & Linux (`x86_64`)
+- **Macs**: macOS (`ARM64` Apple Silicon)
+- **Smartphones**: Android (`ARM64`)
 
 **NextOS** breaks this barrier by introducing a **Dual-Mode Microkernel + WebAssembly Application Fabric**:
 1. **Bare-Metal Mode**: Boots directly from USB/NVMe on real PCs, Macs, and ARM boards (via UEFI / DeviceTree).
@@ -18,9 +18,9 @@ In the modern world, computing is fragmented across incompatible platforms:
 
 ---
 
-## ðŸ—ï¸ 3-Tier Core Architecture
+## 🏗️ 3-Tier Core Architecture
 
-`
+```text
 +---------------------------------------------------------------+
 |                      NextOS Applications                      |
 |       (Compiled to WebAssembly / WASI - Portable Binaries)     |
@@ -37,14 +37,13 @@ In the modern world, computing is fragmented across incompatible platforms:
 |               Hardware Abstraction Layer (HAL)                |
 |  [Bare Metal UEFI] | [Win32 Host] | [macOS Host] | [Android AVF] |
 +---------------------------------------------------------------+
-`
+```
 
 ---
 
-## ðŸš€ Key Technical Pillars
+## 🚀 Key Technical Pillars
 
-### 1. Memory Safety via Rust (
-o_std)
+### 1. Memory Safety via Rust (`no_std`)
 - Eliminates 70% of historical OS security vulnerabilities (null pointer dereferences, buffer overflows, use-after-free).
 - Zero runtime garbage collection pauses (deterministic real-time performance).
 
@@ -54,7 +53,7 @@ o_std)
 
 ### 3. Wasm / WASI Universal App Runtime
 - Write applications once in Rust, C++, Go, or TypeScript/AssemblyScript.
-- Executes at near-native CPU speed across any processor architecture (x86_64, ARM64, RISC-V) without recompiling!
+- Executes at near-native CPU speed across any processor architecture (`x86_64`, `ARM64`, `RISC-V`) without recompiling!
 
 ### 4. GPU-Accelerated Adaptive Glass UI
 - Single UI engine that dynamically shifts between:
@@ -63,19 +62,19 @@ o_std)
 
 ---
 
-## ðŸ—ºï¸ 7-Phase Development Roadmap
+## 🗺️ 7-Phase Development Roadmap
 
 - [x] **Phase 0**: Architectural Specification & System Design
 - [ ] **Phase 1**: Bare-Metal x86_64 Bootloader & VGA/GOP Framebuffer
 - [ ] **Phase 2**: Microkernel Core (Interrupts, GDT/IDT, Paging & Memory Allocator)
 - [ ] **Phase 3**: Zero-Copy Inter-Process Communication (IPC) & Preemptive Task Scheduler
-- [ ] **Phase 4**: Host Runners (Windows .exe, macOS .app, Android .apk guest runners)
+- [ ] **Phase 4**: Host Runners (Windows `.exe`, macOS `.app`, Android `.apk` guest runners)
 - [ ] **Phase 5**: Wasmtime/WASI Application Engine & Virtual File System (VFS)
-- [ ] **Phase 6**: GPU Vector UI (wgpu/Vulkan/DirectX/Metal integration)
+- [ ] **Phase 6**: GPU Vector UI (`wgpu`/Vulkan/DirectX/Metal integration)
 - [ ] **Phase 7**: Self-Hosting Developer Studio & Native Package Manager
 
 ---
 
-## ðŸ“„ License & Attribution
+## 📄 License & Attribution
 Designed & Engineered by **Er. Manoj Kumar** ([nextsem-manoj](https://github.com/nextsem-manoj)).  
 Licensed under the Apache 2.0 / MIT Dual License.
